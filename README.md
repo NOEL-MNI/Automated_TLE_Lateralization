@@ -27,10 +27,10 @@ Subfield segmentation can be performed through freeSurfer or ANTS.
 Outer surface extraction and parameterization can be performed through the SPHARM extension of 3D Slicer. 
 Binaries are also available at: https://www.nitrc.org/projects/spharm-pdm. 
 Main parameters are:
-	- Subdivision level: 32 for CA, 24 for SUB and DG
-	- SPHARM degree: 32 for CA, 24 for SUB and DG
-	- Surface templates are provided (they follow the manual segmentation protocol described in: Kulaga-Yoskovitz, J. et al., Scientific Data, 2015)
-	- We also provide SPHARM orientation example in order to correctly orient the 
+- Subdivision level: 32 for CA, 24 for SUB and DG
+- SPHARM degree: 32 for CA, 24 for SUB and DG
+- Surface templates are provided (they follow the manual segmentation protocol described in: Kulaga-Yoskovitz, J. et al., Scientific Data, 2015)
+- We also provide SPHARM orientation example in order to orient spherical parameters in a similar manner than ours.
 
 II. DIRECTORY ORGANIZATION
 
@@ -104,5 +104,5 @@ A serie of script is furnished in order to perform various tasks:
 	- C_validation_trainingset.m: 	performs the nested repeated 5-Fold validation based on the training set
 	- D_validation_testset.m:	performs the repeated validation on a separated the test set for generalizability
 	- E_train_model.m:		performs the training of a final model
-	- F_test_individual.m:		
+	- F_test_individual.m:		loads saved training models and roi and performs individual lateralization
 
