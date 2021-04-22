@@ -80,7 +80,7 @@ The script is used in the following way (we recommend to use the nomenclature st
 
 IV. Feature Extraction
 
-This script intersects blade surfaces with The script is used in the following manner:
+This script intersects blade surfaces with images and computes the columnar volume. It is used in the following manner:
 ./get_individual_features.sh \
 	${prefix} \ # e.g. TLE
 	${id} \     # e.g. 0362_1
