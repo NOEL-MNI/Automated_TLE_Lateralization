@@ -22,7 +22,7 @@ SurfStat is used to read minc volumes, surfaces and .txt feature files in matlab
 
 Pre-processing (non-uniformity correction, registration to MNI space, inter-modality co-registration) can be performed using freeSurfer, fsl or any other processing pipeline.
 
-Subfield segmentation can be performed through freeSurfer or ANTS.
+Subfield segmentation can be performed through freeSurfer or ASHS. Best alternative to SurfPatch is to use ASHS with our publically available manual subfields label (http://fcon_1000.projects.nitrc.org/indi/retro/mni_hipposeg.html).
 
 Outer surface extraction and parameterization can be performed through the SPHARM extension of 3D Slicer. 
 Binaries are also available at: https://www.nitrc.org/projects/spharm-pdm. 
