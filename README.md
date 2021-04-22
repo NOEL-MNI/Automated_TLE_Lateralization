@@ -35,6 +35,7 @@ Main parameters are:
 II. DIRECTORY ORGANIZATION
 
 The assumed organization of the directories is the following:
+
 	- One directory to store the surfaces and the resulting skeletons (One directory per case, per side and per subfield)
 		surface_directory
 		|
