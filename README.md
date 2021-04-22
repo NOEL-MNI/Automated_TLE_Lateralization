@@ -84,6 +84,7 @@ The script is used in the following way (we recommend to use the nomenclature st
 IV. Feature Extraction
 
 This script intersects blade surfaces with images and computes the columnar volume. It is used in the following manner:
+```
 ./get_individual_features.sh \
 	${prefix} \ # e.g. TLE
 	${id} \     # e.g. 0362_1
@@ -92,10 +93,12 @@ This script intersects blade surfaces with images and computes the columnar volu
 	${surface_directory} \ # The same described in directory organization
 	${image_directory} \
 	${feature_directory}
+```
 
 V. Lateralization
 
 A serie of script is furnished in order to perform various tasks:
+
 	- A_GetTrainingData.m:  	loads training data and control data set
 	- B_StatisticalStudy.m: 	performs a statistical study between controls and training data set
 	- C_validation_trainingset.m: 	performs the nested repeated 5-Fold validation based on the training set
