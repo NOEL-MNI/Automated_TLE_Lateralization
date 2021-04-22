@@ -74,10 +74,12 @@ The assumed organization of the directories is the following:
 III. BLADE EXTRACTION
 
 The script is used in the following way (we recommend to use the nomenclature stated above):
+```
 ./get_medial_surface \
 	${subfield_surface} \
 	${subfield_volume} \
 	${individual_output_prefix} # Example: ${SurfaceDirectory}/TLE_0362_1_L_CA
+```
 
 IV. Feature Extraction
 
