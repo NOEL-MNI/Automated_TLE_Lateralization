@@ -7,19 +7,19 @@
 
 Software dependencies include:
  - The minc toolkit: https://bic-mni.github.io/
- - CMRep: https://github.com/pyushkevich/cmrep
- - QHull: http://www.qhull.org/download/
- - SurfStat Matlab Toolbox: https://www.math.mcgill.ca/keith/surfstat/
+ - `CMRep`: https://github.com/pyushkevich/cmrep
+ - `QHull`: http://www.qhull.org/download/
+ - `SurfStat` MATLAB Toolbox: https://www.math.mcgill.ca/keith/surfstat/
 
-CMRep and QHull are used together to generate the skeleton from the subfield labels.
+`CMRep` and `QHull` are used together to generate the skeleton from the subfield labels.
 
-SurfStat is used to read minc volumes, surfaces and .txt feature files in matlab.
+`SurfStat` is used to read minc volumes, surfaces and .txt feature files in `MATLAB`.
 
-Pre-processing (non-uniformity correction, registration to MNI space, inter-modality co-registration) can be performed using FreeSurfer, FSL or any other MRI processing pipeline.
+Pre-processing (non-uniformity correction, registration to MNI space, inter-modality co-registration) can be performed using `FreeSurfer`, `FSL` or any other MRI processing pipeline.
 
-Subfield segmentation can be performed through FreeSurfer or ASHS. Best alternative to SurfPatch is to use ASHS with our publicly available manual subfield labels (http://fcon_1000.projects.nitrc.org/indi/retro/mni_hipposeg.html).
+Subfield segmentation can be performed through `FreeSurfer` or `ASHS`. Best alternative to `SurfPatch` is to use `ASHS` with our publicly available manual subfield labels (http://fcon_1000.projects.nitrc.org/indi/retro/mni_hipposeg.html).
 
-Outer surface extraction and parameterization can be performed through the SPHARM extension of 3D Slicer. 
+Outer surface extraction and parameterization can be performed through the SPHARM extension of `3D Slicer`. 
 Binaries are available at: https://www.nitrc.org/projects/spharm-pdm
 
 Main parameters are:
@@ -69,7 +69,7 @@ The assumed organization of the directories is specified below:
 
 ### 3. Blade Extraction
 
-The script is used in the following way (we recommend to use the nomenclature stated above):
+The script is used in the following way (we recommend using the nomenclature stated above):
 ```
 ./get_medial_surface \
 	${subfield_surface} \
@@ -81,7 +81,7 @@ The script is used in the following way (we recommend to use the nomenclature st
 
 ### 4. Feature Extraction
 
-This script intersects blade surfaces with images and computes the columnar volume. It is used in the following manner:
+This script intersects blade surfaces with volumetric images and computes the columnar volume:
 ```
 ./get_individual_features.sh \
 	${prefix} \ # e.g. TLE
@@ -105,8 +105,8 @@ The following series of script can be executed in order to accomplish various ta
 |B_StatisticalStudy.m	| performs a statistical study between controls and training data set |
 |C_Validation_TrainingSet.m	| performs the nested repeated 5-Fold validation based on the training set |
 |D_Validation_TestSet.m	| performs the repeated validation on a separated the test set for generalizability |
-|E_Train_Model.m:	| performs the training of a final model |
-|F_Test_Individual.m:	| loads saved training models and ROI and performs individual lateralization |
+|E_Train_Model.m	| performs the training of a final model |
+|F_Test_Individual.m	| loads saved training models and ROI and performs individual lateralization |
 <hr>
 
 
