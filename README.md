@@ -1,9 +1,9 @@
 # Code repository to generate results for:
-> B Caldairou, N Foit, et al. "Automated TLE Lateralization". Neurology (under revision)
+> B Caldairou, N Foit, et al. "Automated TLE Lateralization". Neurology 2021 (under revision)
 <hr>
 
 
-### 1. SOFTWARE DEPENDENCIES
+### 1. Software Dependencies
 
 Software dependencies include:
  - The minc toolkit: https://bic-mni.github.io/
@@ -30,12 +30,13 @@ Main parameters are:
 <hr>
 
 
-### 2. DIRECTORY ORGANIZATION
+### 2. Directory Organization
 
 The assumed organization of the directories is specified below:
 
-	- One directory to store the surfaces and the resulting skeletons (One directory per case, per side and per subfield)
-		surface_directory
+	- One directory to store the surfaces and the resulting skeletons
+		(One directory per case, per side and per subfield)
+		[surface_directory]
 		|
 		|-- TLE_0362_1_L_CA.obj
 		|-- TLE_0362_1_L_CA_inter.obj
@@ -46,7 +47,7 @@ The assumed organization of the directories is specified below:
 		|-- TLE_0362_1_L_SUB_skelFinal.obj
 	
 	- One directory to store feature images 
-		image_directory
+		[image_directory]
 		|
 		|-- TLE_0362_1_t2cor-0.4_stx_norm-0.4.mnc
 		|-- TLE_0362_1_t2wt1wratio_final.mnc
@@ -54,8 +55,9 @@ The assumed organization of the directories is specified below:
 		|-- TLE_0362_1_T2norm.mat
 		|-- TLE_0362_1_Ventricle.mnc
 	
-	- One directory to store the txt files resulting from the intersection between the blades and the images
-		feature_directory
+	- One directory to store the txt files resulting from the
+		intersection between the blades and the images
+		[feature_directory]
 		|
 		|-- TLE_0362_1_L_CA_ColVol.txt
 		|-- TLE_0362_1_R_CA_ColVol.txt
@@ -65,7 +67,7 @@ The assumed organization of the directories is specified below:
 		|-- TLE_0362_1_R_CA_t2wt1wratio.txt
 <hr>
 
-### 3. BLADE EXTRACTION
+### 3. Blade Extraction
 
 The script is used in the following way (we recommend to use the nomenclature stated above):
 ```
@@ -105,4 +107,12 @@ The following series of script can be executed in order to accomplish various ta
 |D_Validation_TestSet.m	| performs the repeated validation on a separated the test set for generalizability |
 |E_Train_Model.m:	| performs the training of a final model |
 |F_Test_Individual.m:	| loads saved training models and ROI and performs individual lateralization |
+<hr>
 
+
+### License
+<a href= "https://opensource.org/licenses/BSD-3-Clause"><img src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg" /></a>
+
+```console
+Copyright 2021 Neuroimaging of Epilepsy Laboratory, McGill University
+```
