@@ -25,8 +25,9 @@ Binaries are available at: https://www.nitrc.org/projects/spharm-pdm
 Main parameters are:
 - Subdivision level: `32 for CA, 24 for SUB and DG`
 - SPHARM degree: `32 for CA, 24 for SUB and DG`
-- Surface templates are provided (they follow the manual segmentation protocol described in: Kulaga-Yoskovitz, J. et al., Scientific Data, 2015)
-- We also provide SPHARM orientation example in order to orient spherical parameters in a similar manner than ours.
+- Surface templates are provided - based on the manual segmentation protocol described in:
+	> Kulaga-Yoskovitz, J. et al., Scientific Data, 2015
+- We also provide SPHARM orientation examples (`surface_template_for_SPHARM/examples`) in order to orient the spherical parameters in a similar manner than ours.
 <hr>
 
 
@@ -106,7 +107,7 @@ The following series of script can be executed in order to accomplish various ta
 |C_Validation_TrainingSet.m	| performs the nested repeated 5-Fold validation based on the training set |
 |D_Validation_TestSet.m	| performs the repeated validation on a separated the test set for generalizability |
 |E_Train_Model.m	| performs the training of a final model |
-|F_Test_Individual.m	| loads saved training models and ROI and performs individual lateralization |
+|F_Test_Individual.m	| loads saved training model and ROI (`data/final_models_and_ROI.mat`), and performs individual lateralization |
 <hr>
 
 
