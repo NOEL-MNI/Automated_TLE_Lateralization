@@ -1,5 +1,5 @@
 # Code repository to generate results for:
-> B Caldairou, N Foit, et al. "Automated TLE Lateralization". Neurology 2021 (under revision)
+> B Caldairou, N Foit, et al. "Automated Lateralization of Temporal Lobe Epilepsy using Multicontrast MRI and Machine Learning". Neurology 2021 (under review)
 <hr>
 
 
@@ -100,14 +100,14 @@ This script intersects blade surfaces with volumetric images and computes the co
 
 The following series of script can be executed in order to accomplish various tasks:
 
-|   						|   										|
-|---------------------------|-------------------------------------------|
-|`A_GetTrainingData.m`	| loads training data and control data set |
-|`B_StatisticalStudy.m`	| performs a statistical study between controls and training data set |
-|`C_Validation_TrainingSet.m`	| performs the nested repeated 5-Fold validation based on the training set |
-|`D_Validation_TestSet.m`	| performs the repeated validation on a separated the test set for generalizability |
-|`E_Train_Model.m`	| performs the training of a final model |
-|`F_Test_Individual.m`	| loads saved training model and ROI (`data/final_models_and_ROI.mat`), and performs individual lateralization |
+|   							|	 																											|
+|-------------------------------|---------------------------------------------------------------------------------------------------------------|
+|`A_GetTrainingData.m`			| loads training data and control data set 																		|
+|`B_StatisticalStudy.m`			| performs a statistical study between controls and training data set 											|
+|`C_Validation_TrainingSet.m`	| performs the nested repeated 5-Fold validation based on the training set 										|
+|`D_Validation_TestSet.m`		| performs the repeated validation on a separated the test set for generalizability 							|
+|`E_Train_Model.m`				| performs the training of a final model 																		|
+|`F_Test_Individual.m`			| loads saved training model and ROI (`data/final_models_and_ROI.mat`), and performs individual lateralization	|
 <hr>
 
 
