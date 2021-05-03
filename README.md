@@ -71,7 +71,7 @@ The assumed organization of the directories is specified below:
 ### 3. Blade Extraction
 
 The script is used in the following way (we recommend using the nomenclature stated above):
-```
+```bash
 ./get_medial_surface \
 	${subfield_surface} \
 	${subfield_volume} \
@@ -83,7 +83,7 @@ The script is used in the following way (we recommend using the nomenclature sta
 ### 4. Feature Extraction
 
 This script intersects blade surfaces with volumetric images and computes the columnar volume:
-```
+```bash
 ./get_individual_features.sh \
 	${prefix} \ # e.g. TLE
 	${id} \     # e.g. 0362_1
