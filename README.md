@@ -1,5 +1,5 @@
 # Code repository to generate results for:
-> B Caldairou, N Foit, et al. "Automated Lateralization of Temporal Lobe Epilepsy using Multicontrast MRI and Machine Learning". Neurology 2021 (under review)
+> B Caldairou, N Foit, et al. "An MRI-Based Machine Learning Prediction Framework to Lateralize Hippocampal Sclerosis in Patients With Temporal Lobe Epilepsy". Neurology (2021); DOI: 10.1212/WNL.0000000000012699
 <hr>
 
 
